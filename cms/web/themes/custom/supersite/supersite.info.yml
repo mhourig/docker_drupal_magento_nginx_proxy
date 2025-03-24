@@ -1,6 +1,9 @@
 name: Super Site
 type: theme
-base theme: claro
+base theme: olivero
+libraries:
+  - supersite/global-styling
+  - olivero/global-styling
 core_version_requirement: ^11 || ^10
 description: 'Custom theme for Super Site.'
 regions:
