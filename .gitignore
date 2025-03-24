@@ -65,7 +65,7 @@ app/etc/config.php
 # Core files installed by Composer (don't edit these manually!)
 cms/web/core/
 cms/web/modules/contrib/
-cms/web/themes/contrib/
+cms/web/themes/contrib/*
 cms/vendor/
 
 

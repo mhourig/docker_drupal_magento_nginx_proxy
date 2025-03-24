@@ -1,0 +1,9 @@
+name: Super Site
+type: theme
+base theme: claro
+core_version_requirement: ^11 || ^10
+description: 'Custom theme for Super Site.'
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
