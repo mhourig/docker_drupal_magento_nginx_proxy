@@ -1,0 +1,135 @@
+# ------------------------
+# GLOBAL
+# ------------------------
+
+*.log
+*.pem
+*.crt
+*.key
+.env
+.DS_Store
+*.swp
+
+# IDEs & OS
+.idea/
+.vscode/
+node_modules/
+
+# Composer dependencies
+vendor/
+
+# Docker volumes
+appdata/
+dbdata/
+sockdata/
+ssldata/
+
+# ------------------------
+# MAGENTO
+# ------------------------
+
+# Build/generated/cache files
+generated/
+var/
+store/src/pub/static/
+store/src/pub/media/tmp/
+
+store/src/var/
+store/src/generated/
+store/src/pub/static/
+store/src/pub/media/tmp/
+store/src/pub/media/downloadable/
+store/src/pub/media/import/
+store/src/.cache/
+store/src/.phpunit.result.cache
+# src
+store/src/dev/
+store/src/lib/
+# Magento caches
+.cache/
+.phpunit.result.cache
+
+# Ignore local config files that may differ by env
+store/src/app/etc/env.php
+app/etc/config.php
+
+# Ignore default src if not using it (optional)
+#store/src/vendor/
+#store/src/var/
+#store/src/generated/
+
+# ------------------------
+# DRUPAL
+# ------------------------
+
+# Core files installed by Composer (don't edit these manually!)
+cms/web/core/
+cms/web/modules/contrib/
+cms/web/themes/contrib/
+cms/vendor/
+
+
+# Drupal caches and temporary files
+cms/web/sites/*/files/js/
+cms/web/sites/*/files/css/
+cms/web/sites/*/files/php/
+cms/web/sites/*/files/styles/
+cms/web/sites/*/files/tmp/
+
+# Site-specific config (you'll export/import config separately)
+cms/web/sites/*/settings.php
+cms/web/sites/*/services.yml
+
+# ------------------------
+# GIT
+# ------------------------
+
+# Lock files (optional, but sometimes useful to track explicitly)
+#composer.lock
+#package-lock.json
+
+
+#--------------------------#
+# Magento Default Files    #
+#--------------------------#
+
+/PATCH_*.sh
+
+/app/etc/local.xml
+
+/media/*
+!/media/.htaccess
+
+!/media/customer
+/media/customer/*
+!/media/customer/.htaccess
+
+!/media/dhl
+/media/dhl/*
+!/media/dhl/logo.jpg
+
+!/media/downloadable
+/media/downloadable/*
+!/media/downloadable/.htaccess
+
+!/media/xmlconnect
+/media/xmlconnect/*
+
+!/media/xmlconnect/custom
+/media/xmlconnect/custom/*
+!/media/xmlconnect/custom/ok.gif
+
+!/media/xmlconnect/original
+/media/xmlconnect/original/*
+!/media/xmlconnect/original/ok.gif
+
+!/media/xmlconnect/system
+/media/xmlconnect/system/*
+!/media/xmlconnect/system/ok.gif
+
+/var/*
+!/var/.htaccess
+
+!/var/package
+/var/package/*
+!/var/package/*.xml

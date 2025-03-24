@@ -1,0 +1,34 @@
+services:
+
+  drupal:
+    container_name: drupal
+    image: drupal:10-apache
+
+    volumes:
+      - ./web:/var/www/html
+    environment:
+      - APACHE_RUN_USER=www-data
+    networks:
+      - shared
+
+  drupaldb:
+    container_name: drupal_db
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: drupal
+      MYSQL_USER: drupal
+      MYSQL_PASSWORD: drupal
+      MYSQL_NATIVE_PASSWORD: 'true'
+    volumes:
+      - drupal-db:/var/lib/mysql
+    networks:
+      - shared
+
+volumes:
+  drupal-db:
+
+networks:
+  shared:
+    external: true
