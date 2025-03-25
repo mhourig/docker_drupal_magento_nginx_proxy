@@ -3,6 +3,7 @@ type: theme
 base theme: stark
 libraries:
   - supersite/global-styling
+  - supersite/global-scripts
 core_version_requirement: ^11 || ^10
 description: 'Custom theme for Super Site.'
 regions:

@@ -1,5 +1,11 @@
+.contextual-links,
+.contextual {
+  display: none !important;
+}
+
+
 body {
-    background-color: #b1f85f;
+    background-color: #ffffff;
     font-family: sans-serif;
   }
 

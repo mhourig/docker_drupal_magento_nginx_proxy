@@ -6,6 +6,8 @@ services:
 
     volumes:
       - ./web:/var/www/html
+      - ./composer.json:/var/www/html/composer.json
+      - ./composer.lock:/var/www/html/composer.lock
     environment:
       - APACHE_RUN_USER=www-data
     networks:

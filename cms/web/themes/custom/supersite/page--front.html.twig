@@ -1,11 +1,18 @@
 <header class="site-header">
   <div class="container">
-    {{ page.header }}
+    <div class="logo">
+      <a href="/"><img src="{{ directory }}/images/logo.svg" alt="Site Logo"></a>
+    </div>
+    <nav class="main-nav">
+      {{ page.header }}
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
   </div>
 </header>
+
 <div class="hero">
 
-  <img src="{{ directory }}/images/hero.jpg" alt="Hero Image">
+  <img src="{{ directory }}/images/hero.webp" alt="Hero Image">
   <div class="hero-text">
     <h1>Welcome to Our Store</h1>
     <p>Discover something amazing.</p>
