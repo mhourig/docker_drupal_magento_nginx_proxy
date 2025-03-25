@@ -5,5 +5,5 @@
  * Theme hooks and preprocess functions.
  */
 function supersite_preprocess_page(array &$variables) {
-  $variables['my_custom_var'] = 'THIS IS A CUSTOM VARIABLE';
+  $variables['my_custom_var'] = 'Hey SUPER COOL';
 }

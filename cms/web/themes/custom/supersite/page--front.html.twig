@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="container">
+    {{ page.header }}
+  </div>
+</header>
+<div class="hero">
+
+  <img src="{{ directory }}/images/hero.jpg" alt="Hero Image">
+  <div class="hero-text">
+    <h1>Welcome to Our Store</h1>
+    <p>Discover something amazing.</p>
+    <a class="cta-button" href="/contact">Shop Now</a>
+  </div>
+</div>
+
+<div class="product-grid">
+  {% block content %}
+    {{ page.content }}
+  {% endblock %}
+</div>
